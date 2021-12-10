@@ -34,7 +34,7 @@
 
 /* Mobile */
 
-@media (max-width:740px){
+@media (max-width:739px){
 
     
     .s-full-width,
@@ -90,6 +90,11 @@
 
     #content .member-img{
         width: 55%;
+    }
+
+    #slider .text-heading,
+    #slider .text-description{
+        display: none;
     }
 }
    

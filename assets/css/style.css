@@ -6,7 +6,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .clear{
@@ -92,6 +92,7 @@ z-index: 1;
 
 #nav, .subnav {
     list-style-type : none;
+    
 
 }
 
@@ -113,6 +114,7 @@ z-index: 1;
     line-height: 46px;
     padding: 0 24px;
     display: block;
+    font-weight: 600;
 }
 
 #nav li:hover .subnav{
@@ -190,7 +192,11 @@ line-height: 46px;
 position: relative;
 margin-top: 46px;
 padding-top: 50%;
-background: url('/W3School/assets/font/slider1.jpg') top center / cover no-repeat;
+background: url('../font/tieu-su-nhom-nhac-da-lab-su-nghiep-doi-tu-f64f573b-097eaeb7_auto_x2.jpg') top center / cover no-repeat;
+animation-name: sliderAnimation ;
+animation: delay 3px; ;
+animation-direction: alternate;
+animation-iteration-count:infinite;
 }
 #slider .text-content{
     position: absolute;
@@ -204,11 +210,13 @@ background: url('/W3School/assets/font/slider1.jpg') top center / cover no-repea
 #slider .text-heading{
     font-weight: 500%;
     font-size: 24px;
+    
 
 }
 #slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 2px #000;
 
 }
 
@@ -241,7 +249,7 @@ background: url('/W3School/assets/font/slider1.jpg') top center / cover no-repea
     font-size: 15px;
     margin-top: 25px;
     text-align: justify;
-    line-height: 1.4;
+    line-height: 1.6;
     font-weight: 600;
 
 }
@@ -257,13 +265,16 @@ background: url('/W3School/assets/font/slider1.jpg') top center / cover no-repea
 
 #content .member-name{
     
-    font-size: 15px;
+    font-size: 22px;
+    font-family: serif;
+    font-weight: 600;
 }
 
 #content .member-img{
     margin-top: 15px;
     width: 150px;
     border-radius: 4px;
+    height: 178px;
 }
 
 .tour-section{
@@ -312,6 +323,7 @@ background: url('/W3School/assets/font/slider1.jpg') top center / cover no-repea
 .place-img{
     width: 100%;
     display: block;
+    height: 183.98px;
 
 }
 
@@ -346,12 +358,14 @@ background: url('/W3School/assets/font/slider1.jpg') top center / cover no-repea
 .btn{
     color: #fff;
     text-decoration: none;
-    padding: 11px 16px;
+    padding: 11px 24px;
     display: inline-block;
     margin-top: 15px;
     background-color: #000;
     border: none;
     text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover{
@@ -535,5 +549,93 @@ background: url('/W3School/assets/font/slider1.jpg') top center / cover no-repea
     }
 }
 
+@keyframes sliderAnimation{
+    from{
+        background: url('../font/tieu-su-nhom-nhac-da-lab-su-nghiep-doi-tu-f64f573b-097eaeb7.png') top center / cover no-repeat;
+        
+    }
+    to{
+        background:url('../font/175764458_316034949884557_7868201104691140899_n.jpg') top center / cover no-repeat ;
+        
+    }
+}
+
+
+@-webkit-keyframes snowflakes-fall {
+    0% {top:-10%}
+    100% {top:100%}
+  }
+  @-webkit-keyframes snowflakes-shake {
+    0%,100% {-webkit-transform:translateX(0);transform:translateX(0)}
+    50% {-webkit-transform:translateX(80px);transform:translateX(80px)}
+  }
+  @keyframes snowflakes-fall {
+    0% {top:-10%}
+    100% {top:100%}
+  }
+  @keyframes snowflakes-shake {
+    0%,100%{ transform:translateX(0)}
+    50% {transform:translateX(80px)}
+  }
+  .snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #000;
+    position:fixed;
+    top:-10%;
+    z-index:9999;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:default;
+    -webkit-animation-name:snowflakes-fall,snowflakes-shake;
+    -webkit-animation-duration:10s,3s;
+    -webkit-animation-timing-function:linear,ease-in-out;
+    -webkit-animation-iteration-count:infinite,infinite;
+    -webkit-animation-play-state:running,running;
+    animation-name:snowflakes-fall,snowflakes-shake;
+    animation-duration:10s,3s;
+    animation-timing-function:linear,ease-in-out;
+    animation-iteration-count:infinite,infinite;
+    animation-play-state:running,running;
+  }
+  .snowflake:nth-of-type(0){
+    left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s
+  }
+  .snowflake:nth-of-type(1){
+    left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s
+  }
+  .snowflake:nth-of-type(2){
+    left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s
+  }
+  .snowflake:nth-of-type(3){
+    left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s
+  }
+  .snowflake:nth-of-type(4){
+    left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s
+  }
+  .snowflake:nth-of-type(5){
+    left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s
+  }
+  .snowflake:nth-of-type(6){
+    left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s
+  }
+  .snowflake:nth-of-type(7){
+    left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s
+  }
+  .snowflake:nth-of-type(8){
+    left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s
+  }
+  .snowflake:nth-of-type(9){
+    left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s
+  }
+  .snowflake:nth-of-type(10){
+    left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s
+  }
+  .snowflake:nth-of-type(11){
+    left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s
+  }
 
 
