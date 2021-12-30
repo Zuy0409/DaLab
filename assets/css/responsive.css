@@ -29,6 +29,13 @@
  /* Tablet */ 
 
 @media (min-width:740px) and (max-width:1023px){
+    #nav li a{
+        text-decoration: none;
+        line-height: 46px;
+        padding: 0 20px;
+        display: block;
+        font-weight: 600;
+    }
     
 }
 
